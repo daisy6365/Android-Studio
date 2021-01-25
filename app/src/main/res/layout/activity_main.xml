@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="right"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width = "wrap_content"
+            android:text="안녕하세요"
+            android:textColor="#819E82"
+            android:background="#9E000000"
+            android:textSize="60dp"
+            android:layout_gravity="left"
+            android:layout_height = "wrap_content" />
+
+        <TextView
+            android:text="안녕히계세요"
+            android:textColor="#819E82"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#EF7979"
+            tools:ignore="ExtraText"/>
+
+        <!-- Layout이라고 되어있는 컴포넌트는 부모컴포넌트가 될수 있음 -> 화면의 구성을 정함
+        부모컴포넌트는 자식의 위치를 정할수 있음 -->
+    </LinearLayout>

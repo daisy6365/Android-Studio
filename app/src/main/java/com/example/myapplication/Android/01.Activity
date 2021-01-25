@@ -1,0 +1,54 @@
+01. Activity
+- 앱의 한 화면이다
+
+- Life Cycle(수명 주기)
+- onCreate
+    -> activity가 만들어질 때 단 한번만 호출 된다
+    -> activity를 만들때 단 한번만 하면 되는 작업들 여기에서 해준다
+- onStart
+- onResume
+    -> 다시 앱으로 돌아올때 무조건 호출 된다
+    -> activity가 다시 호출될 때 하면 되는 작업들을 여기에서 해준다
+
+- onPause 을
+    -> 화면의 일부가 가려 졌을 때
+    -> onResume()
+- onStop
+    -> 화면 전부가 보이지 않을 때
+    -> onRestart() -> onStart()
+- onDestroy
+
+// 04. Task -> Activity
+
+// !!꼭 읽고 공부!!
+//https://developer.android.com/guide/components/activities/tasks-and-back-stack?hl=kov
+//- Stack
+//- Activity는 STACK 으로 관리됨
+//- 햄버거처럼 아래에서 위로 쌓이는 것
+//- Task가 쌓인다
+
+//ex)                                                A
+//A  ---->  B  -----> C  ----->  B  -----> A  -----> B
+//          A         B          A         B
+//                    A                    A
+
+//켜지는 방법을 자체 속성으로 가지고 있는 경우
+//-> launchMode
+
+//켜지는 방법을 지시하는 경우
+//-> IntentFlag
+
+
+//LaunchMode                다중허용
+//- Standard                 O
+//- singleTop               조건부 -> 열려고 하는 엑티비티가 현재 엑티비티 라면(중복이라면)
+//                                   onNewIntent를 호출한다
+//----------------------------------------
+//- singleTask               X
+//- singleInstance           X
+
+//인텐트 플래그
+//FLAG_ACTIVITY_NEW_TASK
+//FLAG_ACTIVTY_SINGLE_TOP
+//FLAG_ACTIVTY_CLEAR_TOP
+//등등
