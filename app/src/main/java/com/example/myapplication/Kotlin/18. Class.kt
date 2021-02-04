@@ -3,7 +3,7 @@ package com.example.myapplication.Kotlin
 
 // 18. Class
 
-// OOP -> Object Oriented Programing (객체지향 프로그래밍)
+// OOP -> Object Oriented Programming (객체지향 프로그래밍)
 
 // "객체"란 뭘까?
 // - 이름이 있는 모든 것
@@ -21,7 +21,6 @@ package com.example.myapplication.Kotlin
 // - 설명서가 있어야 합니다(객체를 담고 있는)
 
 fun main(array: Array<String>) {
-
     // 클래스(설명서)를 통해서 실체를 만드는 방법
     // -> 인스턴스화 -> 인스턴스(객체)
     Car("v8 engine", "big")
@@ -30,9 +29,8 @@ fun main(array: Array<String>) {
 
     // 우리가 만든 클래스(설명서)는 자료형이 된다결
     // 함수들 호출
-   val bigCar1: Car = Car("v8 engine", "big")
+    val bigCar1: Car = Car("v8 engine", "big")
     val superCar: SuperCar = SuperCar("good engine", "big", "white")
-
 
     // 인스턴스가 가지고있는 기능을 사용하는 방법
     // RunnableCar.ride() -> XXX 에러 발생
@@ -46,15 +44,15 @@ fun main(array: Array<String>) {
     val runableCar2: RunableCar2 = RunableCar2("nice engine", "long body")
     println(runableCar2.body)
     println(runableCar2.engine)
-    runableCar.ride()
-    runableCar.navi("인천")//변수 필요하므로 넣어줌
-    runableCar.drive()
+    runableCar2.ride()
+    runableCar2.navi("인천")//변수 필요하므로 넣어줌
+    runableCar2.drive()
 
 
     println()
-    val testCalss = TestClass()
-    testCalss.test(1) //up
-    testCalss.test(1, 2)// down
+    val testClass = TestClass()
+    testClass.test(1) //up
+    testClass.test(1, 2)// down
 
 
 }

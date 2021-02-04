@@ -57,7 +57,7 @@ class Intent03 : AppCompatActivity() {
 //            startActivityForResult(intent2,200)
 
             //암시적 인텐트동 (전화, 인터넷주소 사이트 이동 ...)
-            //버튼을 누르면 -> 네이버 사이트로 이
+            //버튼을 누르면 -> 네이버 사이트로 이동
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://m.naver.com"))
             startActivity(intent)
             

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".EmailSignupActivity">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/instagram"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/join_id"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:ems="15"
+        android:hint="ID를 입력하세요"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:layout_marginBottom="15dp"
+
+        />
+
+    <EditText
+        android:id="@+id/join_pw"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="PW를 입력하세요"
+        android:background="#ffffff"
+        android:ems="15"
+        android:padding="10dp"
+        android:layout_marginBottom="15dp"
+
+        />
+
+    <EditText
+        android:id="@+id/join_pwck"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:ems="15"
+        android:hint="PW 확인"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:layout_marginBottom="15dp"
+
+        />
+
+    <Button
+        android:id="@+id/join_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:ems="18"
+        android:text="가입"
+        />
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:ems="18"
+        android:text="로그인하기"
+        />
+
+
+</LinearLayout>

@@ -55,7 +55,7 @@ fun main(array: Array<String>) {
     println()
 
     // 반복하는 방법 (7)
-    for (i in 0 until a.size step (2)) { //두단계씩
+    for (i in 1 until a.size step (2)) { //두단계씩
         println(a.get(i)) //0,2,4,6,8 번째 값 -> 1,3,5,7,9
     }
     println()
@@ -98,7 +98,7 @@ fun main(array: Array<String>) {
     do {
         println("hello")
         d++
-    } while (d < e)
+    } while (d <= e)
 
 
 }

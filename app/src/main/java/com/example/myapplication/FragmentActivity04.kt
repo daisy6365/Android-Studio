@@ -41,6 +41,8 @@ class FragmentActivity04 : AppCompatActivity() , FragmentActivity04_1.OnDataPass
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fragment04)
         Log.d("Life_cycle","onCreate")
+
+
         val button : Button = findViewById(R.id.button)
         val button2 : Button = findViewById(R.id.button2)
 
